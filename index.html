@@ -64,17 +64,15 @@
 <li>Feedback via text-to-speech, vibration or simple sounds </li>
 </ul><h3>Progress</h3>
 
-<p>The project has been presented to the class and our professor has accepted it.</p>
+<p>February 7 - The project has been presented to the class and our professor has accepted it.</p>
 
-<p>Homepage is up</p>
+<p>February 8 - We have determined some of the most important challenges and modules in our project and divided them between us. </p>
 
-<p>We have determined some of the most important challenges and modules in our project and divided them between us. </p>
+<p>February 9 - Programmed several simple apps for testing and getting used to: accelerometer, microphone, vibration motor, text-to-speech, controlling media apps etc. Started looking at what kind of data we can get from the accelerometer and microphone and ways to analyze these.</p>
 
-<p>Programmed several simple apps for testing and getting used to: accelerometer, microphone, vibration motor, text-to-speech, controlling media apps etc.</p>
+<p>February 10 - We have now implemented two prototype apps for the alternative interfaces. One the measures the sound amplitude to detect knocks on the phone, and one which detects spikes in accelerometer data due to movement in the z-axis of the phone. Detecting knock-spikes is easy enough, the difficult part is removing all the noise so we don't get false positives. It seems very difficult to detect actual -single- knocks vs a wide range of other noise. However, we found that when we look for a pattern like knock-wait-knock, both prototypes are actually already pretty robust. Both apps are now separately able to reliable detect knocks without triggering from other things while the phone is in the pocket etc. The accelerometer app is now simply using a absolute high-pass filter with a simple event-timer to detect successive knocks. The sound measure app returns the highest measured noise in some interval (a knock produces a saturation) and then waits some time for another knock. These app have also been used to simply vibrate on event, as well as pause and resume multimedia-apps on our phones. </p>
 
-<p>Started looking at what kind of data we can get from the accelerometer and microphone and ways to analyze these.</p>
-
-<p>To be continued...</p>
+<p>We are now considering adding a state machine for detecting of knock-patterns, so that we can easily add more complex patterns later. We also want to optimize each of the apps and make them even more robust, or finding better ways to analyze data before we merge them together. When we are happy with the interface itself we will move over to making example apps and maybe even putting them on Google Play if they are any good!</p>
 
 <p>By Torgeir Lien (samma@github / <a href="mailto:sloooth@gmail.com">sloooth@gmail.com</a>) and Geir Turtum (geirivtu@github / <a href="mailto:geirturtum@gmail.com">geirturtum@gmail.com</a>)</p>
 
