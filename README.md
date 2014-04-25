@@ -9,4 +9,4 @@ This is an interface which can control a smartphone by knocking or tapping on th
 
 See [project homepage](http://kybdp.github.com/KnockKnock/) for full description, explanation and presentation slides.
 
-by Geir Turtum (geirivtu@github) and Torgeir Lien (samma@github / sloooth@gmail.com) 
+by Torgeir Lien (samma@github / sloooth@gmail.com) 
